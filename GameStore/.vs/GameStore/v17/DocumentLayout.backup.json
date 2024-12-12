@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|c:\\users\\phoenix\\desktop\\gamestore\\gamestore\\areas\\admin\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|solutionrelative:areas\\admin\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|c:\\users\\phoenix\\desktop\\gamestore\\gamestore\\areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|solutionrelative:areas\\admin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|c:\\users\\phoenix\\desktop\\gamestore\\gamestore\\areas\\admin\\views\\game\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|solutionrelative:areas\\admin\\views\\game\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|c:\\users\\phoenix\\desktop\\gamestore\\gamestore\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{337638F2-BFE7-4E5D-9320-05D5E6F90BEB}|GameStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Areas\\Admin\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Areas\\Admin\\Controllers\\GameController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T18:15:45.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Areas\\Admin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Areas\\Admin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T18:15:44.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Areas\\Admin\\Views\\Game\\Update.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Admin\\Views\\Game\\Update.cshtml",
+              "ToolTip": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Areas\\Admin\\Views\\Game\\Update.cshtml",
+              "RelativeToolTip": "Areas\\Admin\\Views\\Game\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T18:15:41.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Phoenix\\Desktop\\GameStore\\GameStore\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T18:12:24.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
