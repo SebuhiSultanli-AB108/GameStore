@@ -1,0 +1,68 @@
+# Compiled object files
+*.o
+*.obj
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# ASP.NET
+App_Data/
+*.log
+*.env
+
+# Debug and Release folders
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# Azure
+.localhistory/
+.publishprofiles/
+
+# Rider IDE files
+.idea/
+*.sln.iml
+
+# Visual Studio Code
+.vscode/
+
+# Node modules
+node_modules/
+
+# Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Temporary files
+~$*
+*.tmp
+*.temp
+*.bak
+*.swp
+*.slnide
+
+# Others
+!wwwroot/**/*.js
+!wwwroot/**/*.css
+wwwroot/lib/
+
+# Lock files
+project.lock.json
+project.fragment.lock.json
+
+# Git files
+*.orig
