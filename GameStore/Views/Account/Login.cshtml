@@ -1,0 +1,115 @@
+﻿@model LoginVM
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="~/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="~/assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="~/assets/css/owl.css">
+    <link rel="stylesheet" href="~/assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <!-- Section: Design Block -->
+    <section class="">
+        <!-- Jumbotron -->
+        <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%); ">
+            <div class="container" style="margin-top: 8%">
+                <div class="row gx-lg-5 align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h1 class="my-5 display-3 fw-bold ls-tight">
+                            The best offer <br />
+                            <span class="text-primary">for your business</span>
+                        </h1>
+                        <p style="color: hsl(217, 10%, 50.8%)">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Eveniet, itaque accusantium odio, soluta, corrupti aliquam
+                            quibusdam tempora at cupiditate quis eum maiores libero
+                            veritatis? Dicta facilis sint aliquid ipsum atque?
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="card">
+                            <div class="card-body py-5 px-md-5">
+                                <form class="login" method="post">
+                                    <!-- Email input -->
+                                    <div data-mdb-input-init class="form-outline mb-4">
+                                        <input asp-for="EmailAdress"  type="email" id="form3Example3" class="form-control" />
+                                        <label class="form-label" for="form3Example3">Email address</label>
+                                        <span asp-validation-for="EmailAdress" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Password input -->
+                                    <div data-mdb-input-init class="form-outline mb-2">
+                                        <input asp-for="Password" type="password" id="form3Example4" class="form-control" />
+                                        <label class="form-label" for="form3Example4">Password</label>
+                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Checkbox -->
+                                    <div class="form-check d-flex justify-content-center mb-4">
+                                        <input asp-for="RememberMe" class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                                        <label class="form-check-label" for="form2Example33">Subscribe to our newsletter</label>                                        
+                                        <span asp-validation-for="RememberMe" class="text-danger"></span>
+                                    </div>
+
+                                    <!-- Submit button -->
+                                    <div class="form-check d-flex justify-content-center mb-4" style="padding-left: 0; padding-top: 15px">
+                                        <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+                                            Sign up
+                                        </button>
+                                    </div>
+
+                                    <div class="form-check d-flex justify-content-center mb-4" style="padding-left: 0; padding-bottom: 25px">
+                                        <a class="form-check d-flex" asp-action="Register" >You don't have an account?'</a>
+                                    </div>
+
+                                    <!-- Register buttons -->
+                                    <div class="text-center">
+                                        <p>or sign up with:</p>
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </button>
+
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-google"></i>
+                                        </button>
+
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-twitter"></i>
+                                        </button>
+
+                                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                            <i class="fab fa-github"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+    </section>
+    <!-- Section: Design Block -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/isotope.min.js"></script>
+    <script src="~/assets/js/owl-carousel.js"></script>
+    <script src="~/assets/js/counter.js"></script>
+    <script src="~/assets/js/custom.js"></script>
+</body>
+</html>

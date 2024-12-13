@@ -1,4 +1,6 @@
 using GameStore.DataAccess;
+using GameStore.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace GameStore
@@ -13,8 +15,23 @@ namespace GameStore
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<GameStoreDbContext>(opt =>
             {
-                opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("Lab"));
             });
+            builder.Services.AddIdentity<User, IdentityRole>(opt =>
+            {
+                opt.User.RequireUniqueEmail = false;
+                opt.SignIn.RequireConfirmedEmail = true;
+                opt.Password.RequiredLength = 3;
+                opt.Password.RequireDigit = false;
+                opt.Password.RequireLowercase = false;
+                opt.Password.RequireUppercase = false;
+                opt.Password.RequireNonAlphanumeric = false;
+                opt.Lockout.MaxFailedAccessAttempts = 3;
+                opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromDays(100);
+            })
+                .AddDefaultTokenProviders()
+                .AddEntityFrameworkStores<GameStoreDbContext>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
