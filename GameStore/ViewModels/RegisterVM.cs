@@ -8,7 +8,7 @@ namespace GameStore.ViewModels
         public string Firstname { get; set; }
         [Required, MaxLength(64)]
         public string Lastname { get; set; }
-        [Required, MaxLength(128), EmailAddress]
+        [Required, MaxLength(128)]
         public string Username { get; set; }
         [Required, MaxLength(128), EmailAddress]
         public string EmailAdress { get; set; }

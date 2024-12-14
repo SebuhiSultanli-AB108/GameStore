@@ -15,12 +15,11 @@ namespace GameStore
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<GameStoreDbContext>(opt =>
             {
-                opt.UseSqlServer(builder.Configuration.GetConnectionString("Lab"));
+                opt.UseSqlServer(builder.Configuration.GetConnectionString("MSSql"));
             });
             builder.Services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.User.RequireUniqueEmail = false;
-                opt.SignIn.RequireConfirmedEmail = true;
                 opt.Password.RequiredLength = 3;
                 opt.Password.RequireDigit = false;
                 opt.Password.RequireLowercase = false;

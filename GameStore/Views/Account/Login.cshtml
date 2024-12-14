@@ -47,21 +47,20 @@
                                     <div data-mdb-input-init class="form-outline mb-4">
                                         <input asp-for="EmailAdress"  type="email" id="form3Example3" class="form-control" />
                                         <label class="form-label" for="form3Example3">Email address</label>
-                                        <span asp-validation-for="EmailAdress" class="text-danger"></span>
+                                        <span style="display: block; margin-top: 4px;" asp-validation-for="EmailAdress" class="text-danger"></span>
                                     </div>
 
                                     <!-- Password input -->
                                     <div data-mdb-input-init class="form-outline mb-2">
                                         <input asp-for="Password" type="password" id="form3Example4" class="form-control" />
                                         <label class="form-label" for="form3Example4">Password</label>
-                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                        <span style="display: block; margin-top: 4px;" asp-validation-for="Password" class="text-danger"></span>
                                     </div>
 
                                     <!-- Checkbox -->
                                     <div class="form-check d-flex justify-content-center mb-4">
-                                        <input asp-for="RememberMe" class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                                        <input asp-for="RememberMe" class="form-check-input me-2" type="checkbox" id="form2Example33" checked />
                                         <label class="form-check-label" for="form2Example33">Subscribe to our newsletter</label>                                        
-                                        <span asp-validation-for="RememberMe" class="text-danger"></span>
                                     </div>
 
                                     <!-- Submit button -->

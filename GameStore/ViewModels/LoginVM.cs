@@ -8,7 +8,6 @@ namespace GameStore.ViewModels
         public string EmailAdress { get; set; }
         [Required, MaxLength(16), DataType(DataType.Password)]
         public string Password { get; set; }
-        [Required]
         public bool RememberMe { get; set; }
     }
 }

@@ -8,6 +8,7 @@ namespace GameStore.Controllers
 {
     public class AccountController(UserManager<User> _userManager, SignInManager<User> _signInManager) : Controller
     {
+        private bool isAuthenticated => HttpContext.User.Identity?.IsAuthenticated ?? false;
         public IActionResult Index()
         {
             return RedirectToAction(nameof(Login));
@@ -17,7 +18,8 @@ namespace GameStore.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(LoginVM vm)
         {
-            if (!ModelState.IsValid) { return View(); }
+            if (isAuthenticated) return RedirectToAction("Index", "Home");
+            if (!ModelState.IsValid) return View();
             User? user = await _userManager.FindByEmailAsync(vm.EmailAdress);
             if (user is null)
             {
@@ -33,7 +35,7 @@ namespace GameStore.Controllers
                     ModelState.AddModelError("", "Confirm your account!");
                 return View();
             }
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Home");
         }
         [Authorize]
         public async Task<IActionResult> Logout()
@@ -52,6 +54,14 @@ namespace GameStore.Controllers
                 Email = vm.EmailAdress,
             };
             var result = await _userManager.CreateAsync(user, vm.Password);
+            if (!result.Succeeded)
+            {
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return View();
+            }
             if (!result.Succeeded)
             {
                 foreach (var error in result.Errors)
